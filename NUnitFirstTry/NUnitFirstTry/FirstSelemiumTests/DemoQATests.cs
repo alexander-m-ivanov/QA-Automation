@@ -62,6 +62,7 @@ namespace FirstSelemiumTests
 
             IWebElement submitReg = demoTesWebDriver.FindElement(By.Name("pie_submit"));
             submitReg.Click();
+            //йъгх
 
             IWebElement regSuccessful = demoTesWebDriver.FindElement(By.XPath("//*[@id=\"post-49\"]/div/p"));
 
