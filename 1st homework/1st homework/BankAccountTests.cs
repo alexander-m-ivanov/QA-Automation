@@ -23,12 +23,21 @@ namespace _1st_homework
             BankAcount acc = new BankAcount(-3333m);
         }
 
-        //public void BankAccountWithdraw()
-        //{
-        //    BankAcount acc = new BankAcount(5000m);
-        //
-        //    Assert.AreEqual(4895, acc.Withdraw(100m), "Amount must be 4895");
-        //}
+        [Test]
+        public void BankAccountWithdrawLessThan1000()
+        {
+            BankAcount acc = new BankAcount(5000m);
+			acc.Withdraw(100m);
+            Assert.AreEqual(4895, acc.Amount, "Amount must be 4895");
+        }
+
+        [Test]
+        public void BankAccountWithdrawMoreThan1000()
+        {
+            BankAcount acc = new BankAcount(5000m);
+            acc.Withdraw(2000m);
+            Assert.AreEqual(2960, acc.Amount, "Amount must be 2960");
+        }
 
         [Test]
         public void _1BankAccounTest1()
