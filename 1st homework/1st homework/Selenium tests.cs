@@ -39,7 +39,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void QaAutomatoin()
+        public void QaAutomatoinCoursePageOnSoftuniTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -69,7 +69,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQaRegistrationPage()
+        public void DemoQaRegistrationPageTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -88,7 +88,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQa_1LastNameRequiered()
+        public void DemoQa_1LastNameRequieredValidationTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -107,7 +107,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQa_2PhoneNumberDigits()
+        public void DemoQa_2PhoneNumberDigitsValidationTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -129,7 +129,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQa_3InvalidMailAddress()
+        public void DemoQa_3InvalidMailAddressValidationTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -151,7 +151,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQa_4PassNotEnoughSymbols()
+        public void DemoQa_4PassNotEnoughSymbolsValidationTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -173,7 +173,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void DemoQa_5PassDoNotMatch()
+        public void DemoQa_5PassDoNotMatchValidationTest()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();

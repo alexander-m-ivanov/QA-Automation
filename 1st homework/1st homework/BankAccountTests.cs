@@ -40,14 +40,14 @@ namespace _1st_homework
         }
 
         [Test]
-        public void _1BankAccounTest1()
+        public void _1AssertsBankAccounTest1()
         {
             BankAcount acc = new BankAcount(1000m);
             Assert.AreNotEqual(2000, acc.Amount);
         }
 
         [Test]
-        public void _2BankAccounTest2()
+        public void _2AssertsBankAccounTest2()
         {
             Assert.DoesNotThrow(NotANegativeValue);
         }
@@ -59,7 +59,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void _3BankAccounTest3()
+        public void _3AssertsBankAccounTest3()
         {
             BankAcount account = new BankAcount(1000m);
             BankAcount deposit = new BankAcount(2000m);
@@ -67,7 +67,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void _4BankAccounTest4()
+        public void _4AssertsBankAccounTest4()
         {
             BankAcount account = new BankAcount(1000m);
             BankAcount deposit = new BankAcount(2000m);
@@ -75,7 +75,7 @@ namespace _1st_homework
         }
 
         [Test]
-        public void _5BankAccounTest5()
+        public void _5AssertsBankAccounTest5()
         {
             BankAcount acc = new BankAcount(3000m);
             Assert.IsFalse(acc.Amount < 2000);
