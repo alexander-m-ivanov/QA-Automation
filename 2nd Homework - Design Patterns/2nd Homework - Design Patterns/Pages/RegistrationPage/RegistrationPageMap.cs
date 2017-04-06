@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SeleniumDesignPatternsDemo.Pages.RegistrationPage
+namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
 {
     public partial class RegistrationPage
     {
@@ -31,7 +31,7 @@ namespace SeleniumDesignPatternsDemo.Pages.RegistrationPage
                 return this.Driver.FindElement(By.Id("name_3_firstname"));
             }
         }
-        
+
         public IWebElement LastName
         {
             get
@@ -205,10 +205,44 @@ namespace SeleniumDesignPatternsDemo.Pages.RegistrationPage
         {
             get
             {
-                ////*[@id="pie_register"]/li[6]/div/div/span
-                ////*[@id="pie_register"]/li[7]/div/div/span
                 this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span")));
                 return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span"));
+            }
+        }
+
+        public IWebElement NoNameValidationMessage
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[1]/div[1]/div[2]/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[1]/div[1]/div[2]/span"));
+            }
+        }
+
+        public IWebElement MinimumPhoneDigitsValidationMessage
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span"));
+            }
+        }
+
+        public IWebElement InvalidMailValidationMessage
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[8]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[8]/div/div/span"));
+            }
+        }
+
+        public IWebElement PassNotEnoughSymbolsValidationMessage
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[11]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[11]/div/div/span"));
             }
         }
     }
