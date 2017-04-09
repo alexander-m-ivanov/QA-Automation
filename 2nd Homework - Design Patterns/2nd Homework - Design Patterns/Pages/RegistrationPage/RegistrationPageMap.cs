@@ -219,15 +219,6 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
             }
         }
 
-        public IWebElement MinimumPhoneDigitsValidationMessage
-        {
-            get
-            {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span")));
-                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[6]/div/div/span"));
-            }
-        }
-
         public IWebElement InvalidMailValidationMessage
         {
             get
@@ -243,6 +234,34 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
             {
                 this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[11]/div/div/span")));
                 return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[11]/div/div/span"));
+            }
+        }
+
+        public IWebElement PassDoNotMatchValidationMessage
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[12]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[12]/div/div/span"));
+            }
+        }
+
+        
+        public IWebElement ErrorMessagesForHobbies
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[3]/div/div[2]/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[3]/div/div[2]/span"));
+            }
+        }
+
+        public IWebElement ErrorMessageForRequiredMail
+        {
+            get
+            {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"pie_register\"]/li[8]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"pie_register\"]/li[8]/div/div/span"));
             }
         }
     }

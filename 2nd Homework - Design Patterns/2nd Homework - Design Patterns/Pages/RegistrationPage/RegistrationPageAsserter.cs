@@ -17,7 +17,7 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
 
         public static void AssertMinimumPhoneDigitsValidationMessage(this RegistrationPage page, string text)
         {
-            Assert.IsTrue(page.MinimumPhoneDigitsValidationMessage.Displayed);
+            Assert.IsTrue(page.ErrorMessagesForPhone.Displayed);
         }
 
         public static void AssertInvalidMailAddressValidationTest(this RegistrationPage page, string text)
@@ -25,9 +25,24 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
             Assert.IsTrue(page.InvalidMailValidationMessage.Displayed);
         }
 
-        public static void AssertIPassNotEnoughSymbolsValidationMessage(this RegistrationPage page, string text)
+        public static void AssertPassNotEnoughSymbolsValidationMessage(this RegistrationPage page, string text)
         {
             Assert.IsTrue(page.PassNotEnoughSymbolsValidationMessage.Displayed);
+        }
+
+        public static void AssertPassDoNotMatchValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.PassDoNotMatchValidationMessage.Displayed);
+        }
+
+        public static void AssertHobbysRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessagesForHobbies.Displayed);
+        }
+
+        public static void AssertMailRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessageForRequiredMail.Displayed);
         }
     }
 }
