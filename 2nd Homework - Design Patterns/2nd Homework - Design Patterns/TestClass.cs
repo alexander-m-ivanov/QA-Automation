@@ -345,7 +345,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _12UsernameRequieredValidationMessage()
+        public void _13UsernameRequieredValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -371,7 +371,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _13EmailRequieredValidationMessage()
+        public void _14EmailRequieredValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -384,7 +384,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1989",
                                                          "1234567891011",
                                                          "Buro",
-                                                         "",
+                                                         "asd\asd",
                                                          @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
                                                          "OPSA",
                                                          "12345678",
