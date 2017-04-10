@@ -15,6 +15,11 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
             Assert.IsTrue(page.NoNameValidationMessage.Displayed);
         }
 
+        public static void AssertHobbysRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessagesForHobbies.Displayed);
+        }
+
         public static void AssertMinimumPhoneDigitsValidationMessage(this RegistrationPage page, string text)
         {
             Assert.IsTrue(page.ErrorMessagesForPhone.Displayed);
@@ -35,14 +40,29 @@ namespace _2nd_Homework___Design_Patterns.Pages.RegistrationPage
             Assert.IsTrue(page.PassDoNotMatchValidationMessage.Displayed);
         }
 
-        public static void AssertHobbysRequieredValidationMessage(this RegistrationPage page, string text)
-        {
-            Assert.IsTrue(page.ErrorMessagesForHobbies.Displayed);
-        }
-
         public static void AssertMailRequieredValidationMessage(this RegistrationPage page, string text)
         {
             Assert.IsTrue(page.ErrorMessageForRequiredMail.Displayed);
+        }
+
+        public static void AssertPhoneRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessagesForPhone.Displayed);
+        }
+
+        public static void AssertUsernameRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessageForRequiredUsername.Displayed);
+        }
+
+        public static void AssertPasswordRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessageForRequiredPassword.Displayed);
+        }
+
+        public static void AssertConfirmPasswordRequieredValidationMessage(this RegistrationPage page, string text)
+        {
+            Assert.IsTrue(page.ErrorMessageForRequiredConfirmPassword.Displayed);
         }
     }
 }

@@ -163,6 +163,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
+        //bug in website - the error message appears only when both names are missing!
         public void _6FirstNamesRequiredValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
@@ -394,6 +395,164 @@ namespace _2nd_Homework___Design_Patterns
             regPage.FillRegistrationForm(user);
 
             regPage.AssertMailRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        public void _15LoginFormNotPopulated()
+        {
+            var regPage = new RegistrationPage(this.driver);
+
+            regPage.NavigateTo();
+            regPage.SubmitButton.Click();
+
+            regPage.AssesrtNoNameValidationMessage(requiredField);
+            regPage.AssertHobbysRequieredValidationMessage(requiredField);
+            regPage.AssertPhoneRequieredValidationMessage(requiredField);
+            regPage.AssertUsernameRequieredValidationMessage(requiredField);
+            regPage.AssertMailRequieredValidationMessage(requiredField);
+            regPage.AssertPasswordRequieredValidationMessage(requiredField);
+            regPage.AssertConfirmPasswordRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        public void _16UsernameRequieredValidationMessage()
+        {
+            var regPage = new RegistrationPage(this.driver);
+            RegistrationUser user = new RegistrationUser("Ivan",
+                                                         "Ivanov",
+                                                         new List<bool>(new bool[] { true, false, false }),
+                                                         new List<bool>(new bool[] { false, false, false }),
+                                                         "Bulgaria",
+                                                         "3",
+                                                         "1",
+                                                         "1989",
+                                                         "1234567891011",
+                                                         "",
+                                                         "burkata@abv.bg",
+                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         "OPSA",
+                                                         "12345678",
+                                                         "12345678");
+
+            regPage.NavigateTo();
+            regPage.FillRegistrationForm(user);
+
+            regPage.AssertUsernameRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        public void _17NoNamesAndHobbysPopulated()
+        {
+            var regPage = new RegistrationPage(this.driver);
+            RegistrationUser user = new RegistrationUser("",
+                                                         "",
+                                                         new List<bool>(new bool[] { true, false, false }),
+                                                         new List<bool>(new bool[] { false, false, false }),
+                                                         "Bulgaria",
+                                                         "3",
+                                                         "1",
+                                                         "1989",
+                                                         "1234567891011",
+                                                         "Buro",
+                                                         "burkata@abv.bg",
+                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         "OPSA",
+                                                         "12345678",
+                                                         "12345678");
+
+            regPage.NavigateTo();
+            regPage.FillRegistrationForm(user);
+
+            regPage.AssesrtNoNameValidationMessage(requiredField);
+            regPage.AssertHobbysRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        public void _18NoNamesHobbysAndPhonePopulated()
+        {
+            var regPage = new RegistrationPage(this.driver);
+            RegistrationUser user = new RegistrationUser("",
+                                                         "",
+                                                         new List<bool>(new bool[] { true, false, false }),
+                                                         new List<bool>(new bool[] { false, false, false }),
+                                                         "Bulgaria",
+                                                         "3",
+                                                         "1",
+                                                         "1989",
+                                                         "",
+                                                         "Buro",
+                                                         "burkata@abv.bg",
+                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         "OPSA",
+                                                         "12345678",
+                                                         "12345678");
+
+            regPage.NavigateTo();
+            regPage.FillRegistrationForm(user);
+
+            regPage.AssesrtNoNameValidationMessage(requiredField);
+            regPage.AssertHobbysRequieredValidationMessage(requiredField);
+            regPage.AssertPhoneRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        public void _19NoNamesHobbysPhoneAndUsernamePopulated()
+        {
+            var regPage = new RegistrationPage(this.driver);
+            RegistrationUser user = new RegistrationUser("",
+                                                         "",
+                                                         new List<bool>(new bool[] { true, false, false }),
+                                                         new List<bool>(new bool[] { false, false, false }),
+                                                         "Bulgaria",
+                                                         "3",
+                                                         "1",
+                                                         "1989",
+                                                         "",
+                                                         "",
+                                                         "burkata@abv.bg",
+                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         "OPSA",
+                                                         "12345678",
+                                                         "12345678");
+
+            regPage.NavigateTo();
+            regPage.FillRegistrationForm(user);
+
+            regPage.AssesrtNoNameValidationMessage(requiredField);
+            regPage.AssertHobbysRequieredValidationMessage(requiredField);
+            regPage.AssertPhoneRequieredValidationMessage(requiredField);
+            regPage.AssertUsernameRequieredValidationMessage(requiredField);
+        }
+
+        [Test]
+        //bug in website, hobbies error message do not appear in this combination
+        public void _20NoNamesHobbysPhoneUsernameAndPasswordPopulated()
+        {
+            var regPage = new RegistrationPage(this.driver);
+            RegistrationUser user = new RegistrationUser("",
+                                                         "",
+                                                         new List<bool>(new bool[] { true, false, false }),
+                                                         new List<bool>(new bool[] { false, false, false }),
+                                                         "Bulgaria",
+                                                         "3",
+                                                         "1",
+                                                         "1989",
+                                                         "",
+                                                         "",
+                                                         "burkata@abv.bg",
+                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         "OPSA",
+                                                         "",
+                                                         "12345678");
+
+            regPage.NavigateTo();
+            regPage.FillRegistrationForm(user);
+
+            regPage.AssesrtNoNameValidationMessage(requiredField);
+            regPage.AssertHobbysRequieredValidationMessage(requiredField);
+            regPage.AssertPhoneRequieredValidationMessage(requiredField);
+            regPage.AssertUsernameRequieredValidationMessage(requiredField);
+            regPage.AssertPasswordRequieredValidationMessage(requiredField);
         }
     }
 }
