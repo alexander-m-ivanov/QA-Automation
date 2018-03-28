@@ -10,7 +10,7 @@ using _2nd_Homework___Design_Patterns.Pages.RegistrationPage;
 using System.Collections.Generic;
 using System.Linq;
 
-//In order to debug a test class you have to put the vreakpoint where you want and then on the test class click with the right button of the mouse and select debug tests!
+//In order to debug a test class you have to put the breakpoint where you want and then on the test class click with the right button of the mouse and select debug tests!
 
 namespace _2nd_Homework___Design_Patterns
 {
@@ -35,7 +35,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _1NamesRequieredValidationTest()
+        public void _01_NamesRequieredValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
@@ -61,7 +61,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _2_10NumberOfDigitsInPhoneValidationTest()
+        public void _02_10NumberOfDigitsInPhoneValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -87,7 +87,7 @@ namespace _2nd_Homework___Design_Patterns
         }
         
         [Test]
-        public void _3InvalidMailAddressValidationTest()
+        public void _03_InvalidMailAddressValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ventsislav",
@@ -113,7 +113,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _4PassNotEnoughSymbolsValidationTest()
+        public void _04_PassNotEnoughSymbolsValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ventsislav",
@@ -139,7 +139,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _5PassDoNotMatchValidationTest()
+        public void _05_PassDoNotMatchValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ventsislav",
@@ -166,7 +166,7 @@ namespace _2nd_Homework___Design_Patterns
 
         [Test]
         //bug in website - the error message appears only when both names are missing!
-        public void _6FirstNamesRequiredValidationTest()
+        public void _06_FirstNamesRequiredValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
@@ -192,7 +192,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _7LastNamesRequieredValidationTest()
+        public void _07_LastNamesRequieredValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -218,7 +218,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _8HobbysRequieredValidationTest()
+        public void _08_HobbysRequieredValidationTest()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -244,7 +244,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _9PhoneNumberFilledInWithLettersValidationMessage()
+        public void _09_PhoneNumberFilledInWithLettersValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -270,7 +270,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _10LettersAndDigitsInPhoneValidationMessage()
+        public void _10_LettersAndDigitsInPhoneValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -296,7 +296,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _11SpecialCharacetersInPhoneValidationMessage()
+        public void _11_SpecialCharacetersInPhoneValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -322,7 +322,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _12LettersNumbersAndSpecialCharacetersInPhoneValidationMessage()
+        public void _12_LettersNumbersAndSpecialCharacetersInPhoneValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -348,7 +348,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _13UsernameRequieredValidationMessage()
+        public void _13_UsernameRequieredValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -374,7 +374,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _14EmailRequieredValidationMessage()
+        public void _14_EmailRequieredValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -400,7 +400,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _15LoginFormNotPopulated()
+        public void _15_LoginFormNotPopulated()
         {
             var regPage = new RegistrationPage(this.driver);
 
@@ -417,7 +417,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _16UsernameRequieredValidationMessage()
+        public void _16_UsernameRequieredValidationMessage()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("Ivan",
@@ -443,7 +443,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _17NoNamesAndHobbysPopulated()
+        public void _17_NoNamesAndHobbysPopulated()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
@@ -470,7 +470,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _18NoNamesHobbysAndPhonePopulated()
+        public void _18_NoNamesHobbysAndPhonePopulated()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
@@ -498,7 +498,7 @@ namespace _2nd_Homework___Design_Patterns
         }
 
         [Test]
-        public void _19NoNamesHobbysPhoneAndUsernamePopulated()
+        public void _19_NoNamesHobbysPhoneAndUsernamePopulated()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
@@ -528,7 +528,7 @@ namespace _2nd_Homework___Design_Patterns
 
         [Test]
         //bug in website, hobbies error message do not appear in this combination
-        public void _20NoNamesHobbysPhoneUsernameAndPasswordPopulated()
+        public void _20_NoNamesHobbysPhoneUsernameAndPasswordPopulated()
         {
             var regPage = new RegistrationPage(this.driver);
             RegistrationUser user = new RegistrationUser("",
