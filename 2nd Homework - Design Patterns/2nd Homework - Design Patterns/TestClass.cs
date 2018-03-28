@@ -10,6 +10,8 @@ using _2nd_Homework___Design_Patterns.Pages.RegistrationPage;
 using System.Collections.Generic;
 using System.Linq;
 
+//In order to debug a test class you have to put the vreakpoint where you want and then on the test class click with the right button of the mouse and select debug tests!
+
 namespace _2nd_Homework___Design_Patterns
 {
     [TestFixture]
@@ -47,7 +49,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "8888888888",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -73,7 +75,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "123",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -99,7 +101,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567890",
                                                          "Buro",
                                                          "123",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -125,7 +127,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567890",
                                                          "Buro",
                                                          "abv@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "123",
                                                          "12345678");
@@ -151,7 +153,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567890",
                                                          "Buro",
                                                          "abv@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "123456789",
                                                          "12345678");
@@ -178,7 +180,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "8888888888",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -204,7 +206,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "8888888888",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -230,7 +232,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "8888888888",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -256,7 +258,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "abcdefghijk",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -282,7 +284,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "123cdefghijk",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -308,7 +310,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "@#!$#%#@%^#%",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -334,7 +336,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "@#!askdh$#%#@%^#%2365462354",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -360,7 +362,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "@#!askdh$#%#@%^#%2365462354",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -386,7 +388,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567891011",
                                                          "Buro",
                                                          "asd\asd",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -429,7 +431,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567891011",
                                                          "",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -455,7 +457,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "1234567891011",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -482,7 +484,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "",
                                                          "Buro",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -510,7 +512,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "",
                                                          "",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "12345678",
                                                          "12345678");
@@ -540,7 +542,7 @@ namespace _2nd_Homework___Design_Patterns
                                                          "",
                                                          "",
                                                          "burkata@abv.bg",
-                                                         @"C:\Users\Buro\Desktop\Seminar\Pics\enviroment.jpg",
+                                                         @"C:\Users\aivanov\Pictures\Test.jpg",
                                                          "OPSA",
                                                          "",
                                                          "12345678");
